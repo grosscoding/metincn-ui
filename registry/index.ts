@@ -12,4 +12,16 @@ export const registry: Registry = {
       },
     ],
   },
+  card: {
+    name: "card",
+    type: "registry:ui",
+    dependencies: ["lucide-react"],
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "card.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
 };

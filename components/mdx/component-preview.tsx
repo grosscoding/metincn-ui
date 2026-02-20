@@ -4,6 +4,7 @@ import path from 'path';
 import { Pre } from 'fumadocs-ui/components/codeblock';
 import { DynamicCodeBlock } from 'fumadocs-ui/components/dynamic-codeblock';
 import { Button } from '@/components/ui/button'; // Import components statically for preview
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Previews: Record<string, React.ReactNode> = {
   button: (
@@ -13,6 +14,25 @@ const Previews: Record<string, React.ReactNode> = {
       <Button variant="outline">Cancel</Button>
       <Button variant="destructive">Delete</Button>
     </div>
+  ),
+  card: (
+    <Card className="w-[350px]">
+      <CardHeader>
+        <CardTitle>Report</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="flex flex-col gap-2 p-2 bg-[#222222] border border-[#0a0a0a] shadow-[inset_1px_1px_0_#4a4a4a] rounded-[2px]">
+          <label className="text-[10px] text-[#c0c0c0] font-sans">Character to Report</label>
+          <div className="flex bg-[#111111] border border-[#0a0a0a] shadow-[inset_1px_1px_0_#0a0a0a] h-6 items-center px-2">
+             <span className="text-[11px] text-[#888888]">Character Name</span>
+          </div>
+        </div>
+      </CardContent>
+      <CardFooter className="flex justify-between gap-4">
+        <Button variant="default" className="w-full">Send Report</Button>
+        <Button variant="default" className="w-full">Close</Button>
+      </CardFooter>
+    </Card>
   ),
 };
 
