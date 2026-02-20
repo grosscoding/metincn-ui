@@ -1,0 +1,27 @@
+﻿[SizeNWSE]
+Path=Ajuste diagonal 1.cur
+
+[SizeNESW]
+Path=Ajuste diagonal 2.cur
+
+[SizeWE]
+Path=Ajuste horizontal.cur
+
+[SizeNS]
+Path=Ajuste vertical.cur
+
+[SizeAll]
+Path=Mover.cur
+
+[No]
+Path=No disponible.cur
+
+[UpArrow]
+Path=Selección alternativa.cur
+
+[IBeam]
+Path=Selección de texto.cur
+
+[Arrow]
+Path=Selección Normal.cur
+
