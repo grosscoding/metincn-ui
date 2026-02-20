@@ -1,0 +1,110 @@
+@import "tailwindcss";
+@import "fumadocs-ui/css/neutral.css";
+@import "fumadocs-ui/css/preset.css";
+
+@source "../node_modules/fumadocs-ui/dist/**/*.js";
+
+@theme {
+  --color-metin-gold: #cba958;
+  --color-metin-dark: #12100d;
+  --color-metin-border: #443c2c;
+  --color-metin-hover: #e0be6c;
+
+  --color-fd-error: hsl(var(--destructive));
+}
+
+@layer base {
+
+  :root,
+  .dark {
+    --color-fd-background: hsl(var(--background));
+    --color-fd-foreground: hsl(var(--foreground));
+    --color-fd-muted: hsl(var(--muted));
+    --color-fd-muted-foreground: hsl(var(--muted-foreground));
+    --color-fd-popover: hsl(var(--popover));
+    --color-fd-popover-foreground: hsl(var(--popover-foreground));
+    --color-fd-card: hsl(var(--card));
+    --color-fd-card-foreground: hsl(var(--card-foreground));
+    --color-fd-border: hsl(var(--border));
+    --color-fd-primary: hsl(var(--primary));
+    --color-fd-primary-foreground: hsl(var(--primary-foreground));
+    --color-fd-secondary: hsl(var(--secondary));
+    --color-fd-secondary-foreground: hsl(var(--secondary-foreground));
+    --color-fd-accent: hsl(var(--accent));
+    --color-fd-accent-foreground: hsl(var(--accent-foreground));
+    --color-fd-ring: hsl(var(--ring));
+  }
+
+  /* Sidebar overrides for Fumadocs */
+  #nd-sidebar {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    border-color: hsl(var(--border));
+    --color-fd-accent: hsl(var(--accent));
+    --color-fd-accent-foreground: hsl(var(--accent-foreground));
+    --color-fd-ring: hsl(var(--ring));
+    --color-fd-primary-foreground: hsl(var(--primary-foreground));
+  }
+
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 24 9.8% 10%;
+    --primary-foreground: 60 9.1% 97.8%;
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 20 14.3% 4.1%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 24 10% 8%;
+    /* Very dark brown/grey */
+    --foreground: 41 33% 58%;
+    /* Goldish */
+    --card: 24 10% 10%;
+    --card-foreground: 41 33% 58%;
+    --popover: 24 10% 10%;
+    --popover-foreground: 41 33% 58%;
+    --primary: 41 33% 58%;
+    --primary-foreground: 24 10% 8%;
+    --secondary: 24 8% 15%;
+    --secondary-foreground: 41 33% 58%;
+    --muted: 24 8% 15%;
+    --muted-foreground: 24 5.4% 63.9%;
+    --accent: 24 8% 15%;
+    --accent-foreground: 41 33% 58%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 35 22% 21%;
+    /* Metin border color #443c2c */
+    --input: 35 22% 21%;
+    --ring: 41 33% 58%;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    background-image: url('data:image/svg+xml;utf8,<svg id="patternId" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="a" patternUnits="userSpaceOnUse" width="20" height="20" patternTransform="scale(2) rotate(0)"><rect x="0" y="0" width="100%" height="100%" fill="hsla(0,0%,0%,0)"/><path d="M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z"  stroke-width="0.5" stroke="hsla(41, 33%, 58%, 0.05)" fill="none"/></pattern></defs><rect width="800%" height="800%" transform="translate(0,0)" fill="url(%23a)"/></svg>');
+  }
+}
+
+.metin-border {
+  border: 1px solid #594c33;
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.5),
+    0 2px 4px rgba(0, 0, 0, 0.5);
+}
