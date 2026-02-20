@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @import "tailwindcss";
 @import "fumadocs-ui/css/neutral.css";
 @import "fumadocs-ui/css/preset.css";
@@ -112,9 +114,32 @@
   body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: 'PT Sans', 'Trebuchet MS', 'Helvetica Neue', 'Nimbus Sans', 'Helvetica', 'Arial', sans-serif;
     background-image: url('data:image/svg+xml;utf8,<svg id="patternId" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="a" patternUnits="userSpaceOnUse" width="20" height="20" patternTransform="scale(2) rotate(0)"><rect x="0" y="0" width="100%" height="100%" fill="hsla(0,0%,0%,0)"/><path d="M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z"  stroke-width="0.5" stroke="hsla(41, 33%, 58%, 0.05)" fill="none"/></pattern></defs><rect width="800%" height="800%" transform="translate(0,0)" fill="url(%23a)"/></svg>');
     cursor: url('/cursors/default.cur'), auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: normal !important;
+    font-family: 'Quattrocento', 'Trebuchet MS', 'FiraSans', 'Linux Libertine', 'Times New Roman', serif;
+    line-height: 1.25;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0.25em 0 0.5em;
+    border-bottom: solid 2px #990000;
+  }
+
+  h1,
+  h2 {
+    border-bottom: solid 2px #990000;
+    overflow: hidden;
   }
 
   a,
